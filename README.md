@@ -1,4 +1,4 @@
-# STO-588
+# ST-588
 Brazilian Security Token
 
 ### Run Locally
