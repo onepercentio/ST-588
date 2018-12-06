@@ -1,5 +1,5 @@
 const HDWalletProvider = require('truffle-hdwallet-provider')
-const mnemonic = 'logic ugly mushroom royal slab tragic spawn blame select copper fatigue current'
+const mnemonic = 'Insert mnemoic here'
 
 module.exports = {
     solc: {
@@ -17,7 +17,7 @@ module.exports = {
         },
         ropsten: {
             provider: function() {
-                return new HDWalletProvider(process.env.mnemonic || mnemonic, 'https://ropsten.infura.io/OpYNeKLXOry8mpgQtiId', 0)
+                return new HDWalletProvider(process.env.mnemonic || mnemonic, 'insert infura.io', 0)
             },
             network_id: 3,
             gas: 4706206,
