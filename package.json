@@ -1,10 +1,11 @@
 {
-  "name": "sto-588",
+  "name": "st-588",
   "version": "1.0.0",
   "description": "Brazilian Security Token",
   "scripts": {
     "test": "sh scripts/test.sh",
-    "watch-test": "chokidar contracts/*.sol contracts/**/*.sol test/**/*.sol test/*.js test/**/*.js test/**/**/*.js -c 'sh scripts/test.sh' --silent"
+    "watch-test": "chokidar contracts/*.sol contracts/**/*.sol test/**/*.sol test/*.js test/**/*.js test/**/**/*.js -c 'sh scripts/test.sh' --silent",
+    "combine": "soljitsu combine --src-dir=./contracts --dest-dir=./combined --npm-dir=./node_modules"
   },
   "author": "OnePercent.io",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "openzeppelin-solidity": "^1.12.0",
     "solidity-coverage": "^0.5.0",
     "solium": "^1.1.7",
+    "soljitsu": "^1.0.0",
     "truffle": "^4.1.8",
     "truffle-hdwallet-provider": "0.0.3"
   }
